@@ -14,6 +14,8 @@ pip install django
 ```
 django-admin startproject miniTwitter
 ```
+###### Notes
+- let the project settings know that we have created an app
 
 - move inside project
 ```
@@ -24,9 +26,8 @@ cd  miniTwitter
 ```
 python manage.py startapp tweet
 ```
-
-- flow
-![django-flow](./django-flow.png)
+##### req-res-flow
+![django-flow-pic](./django-flow.png)
 
 #### Run server
 ```
@@ -70,6 +71,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+```
+
+#### Template configuration
+- inside DIRS list
+```
+os.path.join(BASE_DIR, 'templates')
 ```
 
 ### urls.py
