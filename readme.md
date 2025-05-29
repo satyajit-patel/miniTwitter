@@ -1,9 +1,9 @@
 ## Some useful commands
 - create virtual environment```python -m venv .venv```
 - enter to venv ```.venv\Scripts\activate```
-- to list installed libraries ```pip freeze > requirements.txt```
-- to come out of venv ```deactivate```
-- to install dependencies ```pip install -r requirements.txt```
+- list installed libraries (package.json) ```pip freeze > requirements.txt```
+- come out of venv ```deactivate```
+- install dependencies ```pip install -r requirements.txt```
 
 #### Install django
 ```
@@ -25,20 +25,24 @@ cd  miniTwitter
 python manage.py startapp tweet
 ```
 
+- flow
+![django-flow](./django-flow.png)
+
 #### Run server
 ```
 python manage.py runserver
 ```
 
-#### Migrate (if any changes made to DB)
-```
-python manage.py makemigrations
-python manage.py migrate
-```
 
 #### Create super user (admin)
 ```
 python manage.py createsuperuser
+```
+
+#### Migrate (moves the user model to admin model)
+```
+python manage.py makemigrations
+python manage.py migrate
 ```
 
 ### settings.py
