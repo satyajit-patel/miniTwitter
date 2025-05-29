@@ -1,16 +1,24 @@
-#### Commands
+## Some useful commands
 ```
 python -m venv .venv
 .venv\Scripts\activate
-pip install django
 pip freeze > requirements.txt
 deactivate
 pip install -r requirements.txt
 ```
 
+#### Install django
+```
+pip install django
+```
+
 #### Start project
 ```
 django-admin startproject miniTwitter
+```
+
+- move inside project
+```
 cd  miniTwitter
 ```
 
@@ -24,7 +32,7 @@ python manage.py startapp tweet
 python manage.py runserver
 ```
 
-#### Migrate
+#### Migrate (any changes to DB)
 ```
 python manage.py makemigrations
 python manage.py migrate
@@ -36,27 +44,40 @@ python manage.py createsuperuser
 ```
 
 ### settings.py
-#### Media configuration
+
+- imports
 ```
 import os
+```
 
+#### Media configuration
+
+- install pillow
+```
 pip install pillow
+```
 
+- set media
+```
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
 
-#### Static configuratin
+#### Static configuration
+- set static
 ```
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static)]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 ```
 
 ### urls.py
+- imports
 ```
 from django.conf import settings
 from django.conf.urls.static import static
+```
 
-# attach at the end of urlpatterns list
+- link settings (attach at the end of urlpatterns list)
+```
 + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
 ```
