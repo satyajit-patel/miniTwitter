@@ -14,7 +14,7 @@ django-admin startproject miniTwitter
 cd  miniTwitter
 ```
 
-#### Start project
+#### Start app
 ```
 python manage.py startapp tweet
 ```
@@ -36,27 +36,27 @@ python manage.py createsuperuser
 ```
 
 ### settings.py
-    #### Media configuration
-    ```
-    import os
+#### Media configuration
+```
+import os
 
-    pip install pillow
+pip install pillow
 
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-    ```
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+```
 
-    #### Static configuratin
-    ```
-    STATIC_URL = 'static/'
-    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static)]
-    ```
+#### Static configuratin
+```
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static)]
+```
 
 ### urls.py
-    ```
-    from django.conf import settings
-    from django.conf.urls.static import static
+```
+from django.conf import settings
+from django.conf.urls.static import static
 
-    # attach at the end of urlpatterns list
-    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
-    ```
+# attach at the end of urlpatterns list
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+```
