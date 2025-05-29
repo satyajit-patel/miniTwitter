@@ -14,18 +14,19 @@ pip install django
 ```
 django-admin startproject miniTwitter
 ```
-###### Notes
-- let the project settings know that we have created an app
 
 - move inside project
 ```
 cd  miniTwitter
 ```
 
-#### Start app
+#### Create app
 ```
 python manage.py startapp tweet
 ```
+###### Notes
+- make sure to let the project settings know that we have created an app and include it in urls
+
 ##### req-res-flow
 ![django-flow-pic](./django-flow.png)
 
