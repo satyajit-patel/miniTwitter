@@ -1,11 +1,9 @@
 ## Some useful commands
-```
-python -m venv .venv
-.venv\Scripts\activate
-pip freeze > requirements.txt
-deactivate
-pip install -r requirements.txt
-```
+- create virtual environment```python -m venv .venv```
+- enter to venv ```.venv\Scripts\activate```
+- to list installed libraries ```pip freeze > requirements.txt```
+- to come out of venv ```deactivate```
+- to install dependencies ```pip install -r requirements.txt```
 
 #### Install django
 ```
@@ -32,7 +30,7 @@ python manage.py startapp tweet
 python manage.py runserver
 ```
 
-#### Migrate (any changes to DB)
+#### Migrate (if any changes made to DB)
 ```
 python manage.py makemigrations
 python manage.py migrate
