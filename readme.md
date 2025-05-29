@@ -26,6 +26,7 @@ python manage.py startapp tweet
 ```
 ###### Notes
 - make sure to let the project settings know that we have created an app and include it in urls
+- make sure to register in admin.py after making model
 
 ##### req-res-flow
 ![django-flow-pic](./django-flow.png)
@@ -43,7 +44,7 @@ python manage.py createsuperuser
 
 #### Migrate (moves the user model to admin model)
 ```
-python manage.py makemigrations
+python manage.py makemigrations tweet
 python manage.py migrate
 ```
 
