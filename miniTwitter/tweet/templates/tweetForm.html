@@ -6,4 +6,17 @@
 
 {% block content %}
     <h1 class="text-center mt-4">Wellcome to miniTwitter</h1>
+    <h2>
+        {% if form.instance.pk %}
+            Edit tweet 
+        {% else %}
+            Create tweet 
+        {% endif %}
+    </h2>
+    <form method="post" enctype='multipart/form-data' class="form">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit" class="btn btn-warning">Submit</button>
+        <a href="{% url 'tweetCreate' %}">back to tweet list</a>
+    </form>
 {% endblock %}
