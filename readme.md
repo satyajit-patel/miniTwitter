@@ -7,8 +7,8 @@ Built with Django and Bootstrap for full-stack CRUD operations.
 
 ## 🔗 Live Demo & Video
 
-- 🌐 Live Project: [Add link here]
-- 🎥 Demo Video: [Add link here]
+- 🌐 Live link: [here](coming soon)
+- 🎥 Demo Video: [here](coming soon)
 
 ---
 
