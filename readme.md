@@ -1,3 +1,36 @@
+# 🐦 miniTwitter
+
+A sleek social platform for creating and sharing short posts.  
+Built with Django and Bootstrap for full-stack CRUD operations.
+
+---
+
+## 🔗 Live Demo & Video
+
+- 🌐 Live Project: [Add link here]
+- 🎥 Demo Video: [Add link here]
+
+---
+
+## ⚙️ How to run locally
+
+```
+# 1. Clone the repository
+git clone https://github.com/satyajit-patel/miniTwitter.git
+cd miniTwitter
+
+# 2. Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the development server
+python manage.py runserver
+```
+
+
 ## Some useful commands
 - create virtual environment```python -m venv .venv```
 - enter to venv ```.venv\Scripts\activate```
