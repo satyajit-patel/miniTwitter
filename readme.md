@@ -45,6 +45,8 @@ python manage.py createsuperuser
 #### Migrate (moves the user model to admin model)
 ```
 python manage.py makemigrations tweet
+```
+```
 python manage.py migrate
 ```
 

@@ -1,22 +1,72 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    tweet-page
+    Tweet Page
 {% endblock %}
 
 {% block content %}
-    <h1 class="text-center mt-4">Wellcome to miniTwitter</h1>
-    <h2>
-        {% if form.instance.pk %}
-            Edit tweet 
-        {% else %}
-            Create tweet 
-        {% endif %}
-    </h2>
-    <form method="post" enctype='multipart/form-data' class="form">
-        {% csrf_token %}
-        {{form}}
-        <button type="submit" class="btn btn-warning">Submit</button>
-        <a href="{% url 'tweetCreate' %}">back to tweet list</a>
+<style>
+  body {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+
+  .form-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+
+  label {
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  .form-control,
+  .form-select {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    color: #fff;
+  }
+
+  .form-control:focus {
+    border-color: #ffc107;
+    box-shadow: none;
+    background-color: #2c2c2c;
+    color: #fff;
+  }
+
+  .btn-warning {
+    margin-top: 1rem;
+  }
+
+  a.text-muted {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+</style>
+
+<div class="container py-5">
+  <h1 class="text-center mb-4">Welcome to miniTwitter</h1>
+  
+  <div class="form-container">
+    <h3 class="mb-4 text-warning">
+      {% if form.instance.pk %}
+        ✏️ Edit Tweet
+      {% else %}
+        📝 Create Tweet
+      {% endif %}
+    </h3>
+
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-warning w-100 fw-semibold">Submit</button>
+      <a href="{% url 'tweetList' %}" class="text-muted">← Back to tweet list</a>
     </form>
+  </div>
+</div>
 {% endblock %}
