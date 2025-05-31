@@ -5,14 +5,14 @@ Built with Django and Bootstrap for full-stack CRUD operations.
 
 ---
 
-## 🔗 Live Demo & Video
+## Live Demo & Video
 
-- 🌐 Live link: [here](coming soon)
-- 🎥 Demo Video: [here](coming soon)
+- watch live link: [here](coming soon)
+- Watch demo video: [here](https://drive.google.com/file/d/1uuaNXbSxlDEsFl0c3GAPieloCLm7-YxW/view?usp=sharing)
 
 ---
 
-## ⚙️ How to run locally
+## How to run locally
 
 ```
 # 1. Clone the repository
