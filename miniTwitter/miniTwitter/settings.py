@@ -27,6 +27,10 @@ SECRET_KEY = 'django-insecure-w!x&$fq)6%&wd-&^_ql!!l3wts(0&5=lummn(qrx)u_gqvn!22
 DEBUG = True # for deployment
 
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    'https://mini-twitter-lsd8.onrender.com'
+]
+
 
 
 # Application definition
