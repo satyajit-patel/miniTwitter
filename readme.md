@@ -7,7 +7,7 @@ Built with Django and Bootstrap for full-stack CRUD operations.
 
 ## Live Demo & Video
 
-- watch live link: [here](coming soon)
+- watch live link: [here](https://mini-twitter-lsd8.onrender.com)
 - Watch demo video: [here](https://drive.google.com/file/d/1uuaNXbSxlDEsFl0c3GAPieloCLm7-YxW/view?usp=sharing)
 
 ---
